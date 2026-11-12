@@ -13,7 +13,7 @@ An introductory SQL project analyzing Transport for London (TfL) journey data fr
 - **2020 was the lowest year for Underground & DLR** at about 310 million journeys, followed by 2021 (about 748 million) and 2022 (about 1,065 million), likely reflecting the COVID-19 pandemic.
 
 ## Tools
-- SQL, DataCamp DataLab
+- SQL (Google BigQuery), DataCamp DataLab
 
 ## Approach
 I worked through each question by writing a query and debugging it when it failed. When I got stuck, I studied the relevant concepts, then refined my solution until the output matched the requirements.
