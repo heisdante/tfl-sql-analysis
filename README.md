@@ -1,7 +1,22 @@
-# tfl-sql-analysis
+# London Travel Network Analysis (SQL)
 
-1. What are the most popular transport types, measured by the total number of journeys? The output should contain two columns, 1) `journey_type` and 2) `total_journeys_millions`, and be sorted by the second column in descending order. Save the query as `most_popular_transport_types`.
-2. Which five months and years were the most popular for the Emirates Airline? Return an output containing `month`, `year`, and `journeys_millions`, with the latter rounded to two decimal places and aliased as `rounded_journeys_millions`. Exclude null values and order the results by 1) `rounded_journeys_millions` in descending order and 2) `year` in ascending order, saving the result as `emirates_airline_popularity`.
-3. Find the five years with the lowest volume of `Underground & DLR` journeys, saving as `least_popular_years_tube`. The results should contain the columns `year`, `journey_type`, and `total_journeys_millions`.
+An introductory SQL project analyzing Transport for London (TfL) journey data from 2010 to 2022, completed as part of the DataCamp project *Exploring London's Travel Network*.
 
-These are the questions answered from the project; Exploring London's Travel Network. My approach towards this project was getting started, getting stuck then studying with the available resources which made it easy for me to narrow down my solution and conclude the project successfully. I learnt more about SQL and how in-depth it was, at a basic level you will think you are good but there is more and I believe this is just the beginning of it all. A great project indeed!
+## Questions Answered
+1. **Most popular transport types:** ranked by total journeys, in millions (`01_most_popular_transport_types.sql`)
+2. **Emirates Airline:** the five most popular months and years, excluding null values (`02_emirates_airline_popularity.sql`)
+3. **Underground & DLR:** the five years with the lowest journey volume (`03_least_popular_years_tube.sql`)
+
+## Key Findings
+- **Bus is the most popular transport type** with about 24,905 million journeys, followed by Underground & DLR with about 15,020 million. The Emirates Airline cable car is the least used at about 14.6 million.
+- **The Emirates Airline peaked in May 2012** at 0.53 million journeys. Three of its top five months were in 2012, and May appears in three of the five.
+- **2020 was the lowest year for Underground & DLR** at about 310 million journeys, followed by 2021 (about 748 million) and 2022 (about 1,065 million), likely reflecting the COVID-19 pandemic.
+
+## Tools
+- SQL, DataCamp DataLab
+
+## Approach
+I worked through each question by writing a query and debugging it when it failed. When I got stuck, I studied the relevant concepts, then refined my solution until the output matched the requirements.
+
+## Key Takeaway
+This project showed me how much depth SQL has beyond the basics. It's a strong foundation, and I'm continuing with data warehousing and dbt to build toward a career in data engineering.
